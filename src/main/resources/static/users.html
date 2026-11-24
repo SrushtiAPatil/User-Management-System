@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav>
+    <h2>User Management System</h2>
+    <div>
+        <span id="currentUserName"></span>
+        <a href="#" id="logoutBtn">Logout</a>
+    </div>
+</nav>
+
+<div class="container">
+    <h1>All Users</h1>
+    <p class="success" id="successMessage"></p>
+    <p class="error" id="errorMessage"></p>
+
+    <div class="actions">
+        <a class="btn" href="/add-user.html">+ Add New User</a>
+    </div>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody id="userTableBody">
+            <tr><td colspan="5" class="empty">Loading users...</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="/js/app.js"></script>
+</body>
+</html>
